@@ -43,27 +43,6 @@ $(function() {
 
         });
 
-        /**
-         * @description Should be able to add a feed to the list
-         */
-        it('can add a feed', function(){
-
-            var testFeed = {
-                name: 'dummy name',
-                url: 'dummy url'
-            };
-
-            addFeed( testFeed );
-
-            expect( allFeeds[allFeeds.length-1]).toBe( testFeed );
-
-            expect(  );
-
-        });
-
-
-
-
     });
 
     /**
