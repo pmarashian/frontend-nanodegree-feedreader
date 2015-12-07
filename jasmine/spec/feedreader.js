@@ -20,12 +20,12 @@ $(function() {
          */
         it('each feed has an url', function(){
 
-            for( i = 0; i < allFeeds.length; i++ ) {
+            allFeeds.forEach( function(el){
 
-                expect(allFeeds[i].url).toBeDefined();
-                expect(allFeeds[i].url.length).toBeGreaterThan(0);
+                expect(el.url).toBeDefined();
+                expect(el.url.length).toBeGreaterThan(0);
 
-            }
+            });
 
         });
 
@@ -34,12 +34,12 @@ $(function() {
          */
         it('each feed has a name', function(){
 
-            for( i = 0; i < allFeeds.length; i++ ) {
+            allFeeds.forEach( function(el){
 
-                expect(allFeeds[i].name).toBeDefined();
-                expect(allFeeds[i].name.length).toBeGreaterThan(0);
+                expect(el.name).toBeDefined();
+                expect(el.name.length).toBeGreaterThan(0);
 
-            }
+            });
 
         });
 
